@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="container" width="880"></p>
+
 ![colima-logo](colima.png)
 
 ## Colima - container runtimes on macOS (and Linux) with minimal setup.
