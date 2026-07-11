@@ -18,7 +18,7 @@ permissions: write-all
 
 jobs:
   build-linux:
-    runs-on: ubuntu-latest
+    runs-on: hanzo-build-linux-amd64
     steps:
       - uses: actions/checkout@v4
 
@@ -51,7 +51,7 @@ jobs:
 
   binaries-linux:
     needs: "build-linux"
-    runs-on: ubuntu-latest
+    runs-on: hanzo-build-linux-amd64
 
     steps:
       - uses: actions/checkout@v4
@@ -103,7 +103,7 @@ jobs:
 
   release:
     needs: ["binaries-linux", "binaries-macos"]
-    runs-on: ubuntu-latest
+    runs-on: hanzo-build-linux-amd64
 
     steps:
       - uses: actions/checkout@v4
